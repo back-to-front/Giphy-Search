@@ -38,4 +38,40 @@ nav a {
 }
 nav .link:hover {
   background-color: #303841;
+}
+
+.top {
+  border: 2px solid yellow;
+  height: 94vh;
+  display: flex;
+  flex-direction: column;
+}
+.top .words {
+  border: 2px solid red;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+}
+.top .words h1 {
+  font-size: 40px;
+}
+.top .paragaph {
+  margin: 25px 10vw;
+  text-align: center;
+  border: 2px solid green;
+}
+.top button {
+  padding: 25px 50px;
+  margin: 25vh auto;
+  border: none;
+  cursor: pointer;
+  color: #d3d6db;
+  background-color: #be3144;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+  font-size: 20px;
+}
+.top button:hover {
+  background-color: #982736;
 }/*# sourceMappingURL=style.css.map */
