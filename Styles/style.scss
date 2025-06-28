@@ -86,3 +86,15 @@ nav {
     background-color: #982736;
   }
 }
+
+.about {
+  border: 2px solid blue;
+  display: flex;
+  flex-direction: column;
+  height: 15vh;
+  justify-content: center;
+
+  section {
+    text-align: center;
+  }
+}
