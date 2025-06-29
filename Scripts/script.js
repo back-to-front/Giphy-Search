@@ -1,10 +1,21 @@
 const apiKey = 'SBSBlCDt9Wc8935Yk28RyhpHh1jhh9ur';
+const btn = document.querySelector('.js-submit-btn');
+
+btn.addEventListener('click', (event) => {
+  fetchData();
+});
+
+document.getElementById('jsSearchItem').addEventListener('keydown', (event) => {
+  if (event.key === 'Enter') {
+    fetchData();
+  }
+});
 
 async function fetchData() {
   try {
-    const searchItem = document.getElementById('searchItem').value;
+    const searchItem = document.getElementById('jsSearchItem').value;
     const response = await fetch(
-      `https://api.giphy.com/v1/gifs/search?api_key=${apiKey}&limit=20&q=${searchItem}`
+      `https://api.giphy.com/v1/gifs/search?api_key=${apiKey}&limit=50&q=${searchItem}`
     );
 
     if (!response.ok) {
@@ -14,21 +25,12 @@ async function fetchData() {
     const gifContainer = document.getElementById('gifContainer');
     gifContainer.innerHTML = '';
 
-    // 4 columns
-    const columns = Array.from({ length: 4 }, () => {
-      const col = document.createElement('div');
-      col.className = 'gif-column';
-      gifContainer.appendChild(col);
-      return col;
-    });
-
-    // Distribute in rows
-    data.data.forEach((gifData, idx) => {
+    data.data.forEach((gifData) => {
       const img = document.createElement('img');
       img.src = gifData.images.fixed_width.url;
       img.alt = 'GIF';
       img.className = 'gifs';
-      columns[idx % 4].appendChild(img);
+      gifContainer.appendChild(img);
     });
   } catch (error) {
     console.error(error);
