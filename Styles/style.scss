@@ -52,13 +52,14 @@ nav {
 }
 
 .top {
-  border: 2px solid yellow;
   height: 94vh;
   display: flex;
   flex-direction: column;
+  background-image: url(../assets/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 
   .words {
-    border: 2px solid red;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -73,7 +74,6 @@ nav {
   .paragaph {
     margin: 25px 10vw;
     text-align: center;
-    border: 2px solid green;
   }
 
   button {
@@ -93,13 +93,16 @@ nav {
 }
 
 .about {
-  border: 2px solid blue;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  background: #303841;
+  background: -webkit-linear-gradient(to top, #434343, #000000);
+  background: linear-gradient(to top, #434343, #000000);
 
   h2 {
     font-size: 30px;
+    margin-top: 20px;
   }
 
   section {
@@ -146,6 +149,10 @@ nav {
   display: flex;
   justify-content: center;
   margin-bottom: 60px;
+
+  section {
+    margin-top: 20px;
+  }
 
   h2 {
     font-size: 30px;
