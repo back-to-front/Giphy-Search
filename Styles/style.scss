@@ -13,6 +13,10 @@ body {
   color: #d3d6db;
 }
 
+h1 {
+  font-family: "Kavoon", sans-serif;
+}
+
 nav {
   background-color: #3a4750;
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
@@ -92,8 +96,11 @@ nav {
   border: 2px solid blue;
   display: flex;
   flex-direction: column;
-  //height: 15vh;
   justify-content: center;
+
+  h2 {
+    font-size: 30px;
+  }
 
   section {
     text-align: center;
@@ -132,5 +139,32 @@ nav {
         font-size: 18px;
       }
     }
+  }
+}
+
+.search {
+  display: flex;
+  justify-content: center;
+
+  h2 {
+    font-size: 30px;
+  }
+
+  input {
+    padding: 10px 15px;
+    margin-right: 50px;
+  }
+
+  button {
+    padding: 12px 17px;
+    background-color: #be3144;
+    border: none;
+    color: #d3d6db;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: #982736;
   }
 }
