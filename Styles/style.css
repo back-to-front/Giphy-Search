@@ -71,11 +71,11 @@ nav .link:hover {
   padding: 25px 50px;
   margin: 25vh auto;
   border: none;
-  cursor: pointer;
   color: #d3d6db;
   background-color: #be3144;
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
   font-size: 20px;
+  cursor: pointer;
 }
 .top button:hover {
   background-color: #982736;
@@ -127,6 +127,7 @@ nav .link:hover {
 .search {
   display: flex;
   justify-content: center;
+  margin-bottom: 60px;
 }
 .search h2 {
   font-size: 30px;
@@ -145,4 +146,22 @@ nav .link:hover {
 }
 .search button:hover {
   background-color: #982736;
+}
+
+.gifs {
+  width: 100%;
+}
+
+#gifContainer {
+  display: flex;
+  gap: 16px;
+  max-width: 900px;
+  margin: 40px auto 0;
+}
+
+.gif-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }/*# sourceMappingURL=style.css.map */
