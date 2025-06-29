@@ -3,6 +3,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -91,10 +92,45 @@ nav {
   border: 2px solid blue;
   display: flex;
   flex-direction: column;
-  height: 15vh;
+  //height: 15vh;
   justify-content: center;
 
   section {
     text-align: center;
+  }
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-top: 40px;
+
+  .card {
+    width: 325px;
+    background-color: #d3d6db;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+
+    .first-img {
+      height: 217px;
+    }
+
+    .card-content {
+      color: #303841;
+
+      p {
+        margin: 20px auto;
+        font-weight: bold;
+        font-size: 18px;
+      }
+    }
   }
 }
