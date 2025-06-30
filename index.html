@@ -9,11 +9,24 @@
   <body>
     <header>
       <nav>
-        <ul>
-          <li><a href="#" class="logo">The GIF Search</a></li>
+        <ul class="sidebar">
+          <li class="sidebarHideIcon">
+            <a href="#" class="link"
+              ><img src="./assets/close-icon.svg" alt="Close Icon"
+            /></a>
+          </li>
           <li><a href="#main" class="link">Main</a></li>
           <li><a href="#" class="link">About</a></li>
           <li><a href="#" class="link">Search</a></li>
+        </ul>
+        <ul>
+          <li><a href="#" class="logo">The GIF Search</a></li>
+          <li class="hideOnMobile"><a href="#main" class="link">Main</a></li>
+          <li class="hideOnMobile"><a href="#" class="link">About</a></li>
+          <li class="hideOnMobile"><a href="#" class="link">Search</a></li>
+          <li class="sidebarIcon menu-button">
+            <a href="#"><img src="./assets/menu-icon.svg" alt="Menu Icon" /></a>
+          </li>
         </ul>
       </nav>
     </header>
