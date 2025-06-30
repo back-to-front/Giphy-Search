@@ -17,6 +17,7 @@ document.querySelector('.sidebarIcon').addEventListener('click', (event) => {
 function showSidebar() {
   const sidebar = document.querySelector('.sidebar');
   sidebar.style.display = 'flex';
+  document.body.style.overflow = 'hidden';
 }
 
 document
@@ -27,6 +28,7 @@ document
 function hideSidebar() {
   const sidebar = document.querySelector('.sidebar');
   sidebar.style.display = 'none';
+  document.body.style.overflow = '';
 }
 
 async function fetchData() {
