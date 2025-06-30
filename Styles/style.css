@@ -67,6 +67,13 @@ nav .link:hover {
 .sidebar a {
   width: 100%;
 }
+.sidebar .link:hover {
+  background-color: #262c33;
+}
+
+.menu-button {
+  display: none;
+}
 
 .top {
   height: 94vh;
@@ -162,7 +169,7 @@ nav .link:hover {
 }
 .search input {
   padding: 10px 15px;
-  margin-right: 50px;
+  margin-right: 10px;
 }
 .search button {
   padding: 12px 17px;
@@ -194,15 +201,26 @@ nav .link:hover {
     max-width: 675px;
   }
 }
-@media (max-width: 900px) {
+@media (max-width: 850px) {
   #gifContainer {
     grid-template-columns: repeat(2, 1fr);
     max-width: 450px;
   }
 }
-@media (max-width: 600px) {
+@media (max-width: 500px) {
   #gifContainer {
     grid-template-columns: 1fr;
     max-width: 225px;
+  }
+  .hideOnMobile {
+    display: none;
+  }
+  .menu-button {
+    display: block;
+  }
+}
+@media (max-width: 400px) {
+  .sidebar {
+    width: 100%;
   }
 }/*# sourceMappingURL=style.css.map */

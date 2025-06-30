@@ -11,6 +11,24 @@ document.getElementById('jsSearchItem').addEventListener('keydown', (event) => {
   }
 });
 
+document.querySelector('.sidebarIcon').addEventListener('click', (event) => {
+  showSidebar();
+});
+function showSidebar() {
+  const sidebar = document.querySelector('.sidebar');
+  sidebar.style.display = 'flex';
+}
+
+document
+  .querySelector('.sidebarHideIcon')
+  .addEventListener('click', (event) => {
+    hideSidebar();
+  });
+function hideSidebar() {
+  const sidebar = document.querySelector('.sidebar');
+  sidebar.style.display = 'none';
+}
+
 async function fetchData() {
   try {
     const searchItem = document.getElementById('jsSearchItem').value;
