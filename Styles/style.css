@@ -101,6 +101,7 @@ nav .link:hover {
   padding: 25px 50px;
   margin: 25vh auto;
   border: none;
+  border-radius: 100px;
   color: #d3d6db;
   background-color: #be3144;
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
@@ -126,7 +127,7 @@ nav .link:hover {
 
 .horizontal-line {
   border-bottom: 2px solid black;
-  margin: 10px 15px 0;
+  margin: 10px 35px 0;
 }
 
 .card-container {
@@ -178,6 +179,7 @@ nav .link:hover {
   padding: 12px 17px;
   background-color: #be3144;
   border: none;
+  border-radius: 100px;
   color: #d3d6db;
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
   cursor: pointer;
