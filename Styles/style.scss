@@ -88,7 +88,6 @@ nav {
   height: 94vh;
   display: flex;
   flex-direction: column;
-  background-image: url(../assets/background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 
@@ -110,19 +109,33 @@ nav {
   }
 
   button {
-    padding: 25px 50px;
+    padding: 1em 2em;
     margin: 25vh auto;
     border: none;
-    border-radius: 100px;
+    border-radius: 1000px;
     color: #d3d6db;
-    background-color: #be3144;
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+    background-color: #161a20;
     font-size: 20px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     cursor: pointer;
   }
 
+  button::after {
+    content: "";
+    position: absolute;
+    height: 110%;
+    width: 105%;
+    border-radius: 1000px;
+    background-image: linear-gradient(to bottom right, #be3144, #e100ff);
+    z-index: -1;
+  }
+
   button:hover {
-    background-color: #982736;
+    z-index: 0;
+    box-shadow: 40px 0 100px #be3144, -40px 0 100px #e100ffbb;
   }
 }
 
@@ -188,6 +201,9 @@ nav {
 
   section {
     margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   h2 {
@@ -196,22 +212,41 @@ nav {
 
   input {
     padding: 10px 15px;
-    margin-right: 10px;
+    margin: 10px;
   }
 
   button {
-    padding: 12px 17px;
-    background-color: #be3144;
+    padding: 1em 2em;
+    background-color: #161a20;
     border: none;
-    border-radius: 100px;
+    border-radius: 1000px;
     color: #d3d6db;
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     cursor: pointer;
   }
 
-  button:hover {
-    background-color: #982736;
+  button::after {
+    content: "";
+    position: absolute;
+    height: 107%;
+    width: 102%;
+    border-radius: 1000px;
+    background-image: linear-gradient(to bottom right, #be3144, #e100ff);
+    z-index: -1;
   }
+
+  button:hover {
+    z-index: 0;
+    box-shadow: 40px 0 100px #be3144, -40px 0 100px #e100ffbb;
+  }
+}
+
+.search-controls {
+  display: flex;
+  gap: 10px;
 }
 
 .gifs {
