@@ -91,6 +91,7 @@ nav .link:hover {
 }
 .top .words h1 {
   font-size: 40px;
+  text-align: center;
 }
 .top .paragaph {
   margin: 25px 10vw;
@@ -185,6 +186,7 @@ nav .link:hover {
 }
 .search h2 {
   font-size: 30px;
+  text-align: center;
 }
 .search input {
   padding: 10px 15px;
