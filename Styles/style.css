@@ -94,7 +94,7 @@ nav .link:hover {
   text-align: center;
 }
 .top .paragaph {
-  margin: 25px 10vw;
+  margin: 65px 10vw;
   text-align: center;
 }
 .top button {
@@ -139,7 +139,7 @@ nav .link:hover {
 }
 
 .horizontal-line {
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid white;
   margin: 10px 35px 0;
 }
 
@@ -207,8 +207,8 @@ nav .link:hover {
 .search button::after {
   content: "";
   position: absolute;
-  height: 107%;
-  width: 102%;
+  height: 110%;
+  width: 105%;
   border-radius: 1000px;
   background-image: linear-gradient(to bottom right, #be3144, #e100ff);
   z-index: -1;
@@ -220,6 +220,7 @@ nav .link:hover {
 
 .search-controls {
   display: flex;
+  margin-top: 20px;
   gap: 10px;
 }
 
@@ -232,7 +233,7 @@ nav .link:hover {
   grid-template-columns: repeat(4, 1fr);
   gap: 10px;
   max-width: 1100px;
-  margin: 40px auto 0;
+  margin: 40px auto 10px;
 }
 
 @media (max-width: 1100px) {
@@ -262,5 +263,14 @@ nav .link:hover {
 @media (max-width: 400px) {
   .sidebar {
     width: 100%;
+  }
+}
+@media (max-width: 343px) {
+  .search-controls input {
+    padding: 2px 7px;
+    margin: 0;
+  }
+  .search-controls button {
+    padding: 0.75em 1.5em;
   }
 }/*# sourceMappingURL=style.css.map */
