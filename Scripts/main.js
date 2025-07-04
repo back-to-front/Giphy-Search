@@ -1,6 +1,10 @@
 const apiKey = 'SBSBlCDt9Wc8935Yk28RyhpHh1jhh9ur';
 const btn = document.querySelector('.js-submit-btn');
 
+document.getElementById('getStartedBtn').addEventListener('click', () => {
+  document.getElementById('search').scrollIntoView({ behavior: 'smooth' });
+});
+
 document
   .querySelector('.sidebarHideIcon a')
   .addEventListener('click', (event) => {

@@ -45,6 +45,9 @@ nav a {
   align-items: center;
   color: #d3d6db;
 }
+nav .logo {
+  color: #e100ff;
+}
 nav .link:hover {
   background-color: #303841;
 }
@@ -97,6 +100,9 @@ nav .link:hover {
   font-size: 40px;
   text-align: center;
 }
+.top .words span {
+  color: #be3144;
+}
 .top .paragaph {
   margin: 65px 10vw;
   text-align: center;
@@ -113,6 +119,10 @@ nav .link:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  -webkit-user-selet: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
   cursor: pointer;
 }
 .top button::after {
@@ -143,7 +153,9 @@ nav .link:hover {
 }
 
 .horizontal-line {
-  border-bottom: 2px solid white;
+  border-bottom: 2px solid transparent;
+  -o-border-image: linear-gradient(to right, #be3144, #e100ff) 1;
+     border-image: linear-gradient(to right, #be3144, #e100ff) 1;
   margin: 10px 35px 0;
 }
 

@@ -51,6 +51,10 @@ nav {
     color: #d3d6db;
   }
 
+  .logo {
+    color: #e100ff;
+  }
+
   .link:hover {
     background-color: #303841;
   }
@@ -106,6 +110,10 @@ nav {
       font-size: 40px;
       text-align: center;
     }
+
+    span {
+      color: #be3144;
+    }
   }
 
   .paragaph {
@@ -125,6 +133,8 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
+    -webkit-user-selet: none;
+    user-select: none;
     cursor: pointer;
   }
 
@@ -160,7 +170,8 @@ nav {
 }
 
 .horizontal-line {
-  border-bottom: 2px solid white;
+  border-bottom: 2px solid transparent;
+  border-image: linear-gradient(to right, #be3144, #e100ff) 1;
   margin: 10px 35px 0;
 }
 
