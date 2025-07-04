@@ -18,6 +18,8 @@ Scroll down to the bottom or use the Get Started button in the middle of the scr
 
 As you shrink the page, the page will adapt and look good on any screen size. It is mobile friendly and the GIF area will show a different amount of columns depending on the current screen size.
 
+You Can also use the Enter key on your keyboard inside of the input field to search for the GIFs.
+
 ## Tech Used
 
 - HTML
